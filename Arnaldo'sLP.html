@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>ACAB's Landing Page</title>
+        <link rel="stylesheet" href="style.css.css">
+        </head>
+    <body>
+        <div class="container">
+            <div class="navbar">
+                <img src="logo1.png" class="logo">
+                <ul>
+                    <li><a href="#">HOME</a></li>
+                    <li><a href="#">ABOUT</a></li>
+                    <li><a href="#">EVENTS</a></li>
+                    <li><a href="#">MEMBERS</a></li>
+
+
+                    </li>
+                </ul>
+            </div>
+        <div class="content">
+            <div class="left-col">
+                <h1>SOUND<br>OF<br>SOLEMNITY</h1>
+            </div>
+            <div class="right-col">
+            <p>Be entertained</p>
+            <img src="pause (1).png" id="icon">
+        </div>
+        <audio id="moon">
+            <source src="moon.mp3" type="audio/mp3">
+        </audio>
+
+<script>
+    var moon = document.getElementById ("moon");
+    var icon = document.getElementById("icon");
+
+    icon.onclick = function(){
+        if(moon.paused){
+        moon.play();
+        icon.src = "pause (1).png";
+        }else{
+            moon.pause();
+            icon.src = "play-button1.png";
+
+        }
+    }
+</script>
+        </body>
+
+</html>
